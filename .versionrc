@@ -4,6 +4,34 @@
   },
   "header": "# Changelog \n ### Notable Changes are added here.",
   "releaseCommitMessageFormat": "chore(release):   \uD83D\uDD16  releasing {{currentTag}}",
+  "packageFiles": [
+    {
+      "filename": "./package.json",
+      "type": "json"
+    },
+    {
+      "filename": "./packages/backend/package.json",
+      "type": "json"
+    },
+    {
+      "filename": "./packages/web_app/package.json",
+      "type": "json"
+    }
+  ],
+  "bumpFiles": [
+    {
+      "filename": "./package.json",
+      "type": "json"
+    },
+    {
+      "filename": "./packages/backend/package.json",
+      "type": "json"
+    },
+    {
+      "filename": "./packages/web_app/package.json",
+      "type": "json"
+    }
+  ],
   "types": [
     {
       "type": "feat",
