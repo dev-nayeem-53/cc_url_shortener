@@ -1,0 +1,14 @@
+# top-most EditorConfig file
+root = true
+
+[*]
+end_of_line = crlf
+insert_final_newline = true
+
+[*.{js,ts,jsx,tsx,cjs,scss,css}]
+indent_style = space
+indent_size = 2
+
+[package.json]
+indent_style = space
+indent_size = 2

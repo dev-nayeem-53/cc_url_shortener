@@ -1,0 +1,33 @@
+{
+  "writerOpts": {
+    "commitsSort": false
+  },
+  "header": "# Changelog \n ### Notable Changes are added here.",
+  "releaseCommitMessageFormat": "chore(release):   \uD83D\uDD16  releasing {{currentTag}}",
+  "types": [
+    {
+      "type": "feat",
+      "section": "Features"
+    },
+    {
+      "type": "fix",
+      "section": "Bug Fixes"
+    },
+    {
+      "type": "test",
+      "section": "Tests"
+    },
+    {
+      "type": "refactor",
+      "section": "Code Refactored"
+    },
+    {
+      "type": "style",
+      "section": "Improved structure / format of the code"
+    },
+    {
+      "type": "init",
+      "section": "Initial Changes"
+    }
+  ]
+}
