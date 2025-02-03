@@ -1,0 +1,51 @@
+{
+  "name": "cc_url_shortener",
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "husky",
+    "commit": "git-cz",
+    "commitlint": "commitlint --edit --verbose",
+    "lint-staged": "lint-staged",
+    "release": "commit-and-tag-version",
+    "start:api": "cd packages/backend && npm run start:dev",
+    "start:web": "cd packages/web_app && npm run dev",
+    "start:concurrently": "concurrently \"npm run start:web\" \"npm run start:api\"",
+    "start": "node scripts/start-dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-nayeem-53/cc_url_shortener.git"
+  },
+  "keywords": [
+    "Coding Challange",
+    "URL Shortener"
+  ],
+  "author": "Shahriar Nayeem",
+  "license": "UNLICENSED",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/dev-nayeem-53/cc_url_shortener/issues"
+  },
+  "homepage": "https://github.com/dev-nayeem-53/cc_url_shortener#readme",
+  "description": "Repo For URL Shortener Coding Challenges",
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@commitlint/cz-commitlint": "^19.6.1",
+    "@commitlint/format": "^19.5.0",
+    "commit-and-tag-version": "^12.5.0",
+    "commitizen": "^4.3.1",
+    "concurrently": "^9.1.2",
+    "cz-git": "^1.11.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-git"
+    }
+  }
+}
