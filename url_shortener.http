@@ -1,0 +1,17 @@
+# curl -X 'GET'
+#  'https://[::1]:3001/api'
+#  -H 'accept: */*'
+GET https://[::1]:3001/api
+accept: */*
+
+###
+
+### Create a short url
+POST https://localhost:3001/api/url-shortener
+Content-Type: application/json
+
+{
+  "long_url": "https://www.youtube.com/"
+}
+
+###
